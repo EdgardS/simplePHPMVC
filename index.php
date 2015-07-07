@@ -22,11 +22,6 @@
             //llamar al controlador
             require_once("controllers/home.control.php");
             break;
-
-        case "categorias":
-            //llamar al controlador
-            require_once("controllers/categorias.control.php");
-            break;
         case "login":
             require_once("controllers/login.control.php");
             break;
@@ -35,6 +30,26 @@
             break;
         //para agregar una nueva pagina
         // agregar otro case
+        case "categorias":
+            require_once("controllers/categorias.control.php");
+            break;
+        case "category":
+            require_once("controllers/category.control.php");
+            break;
+        //Mantenimiento de Unidades
+        case "unidades":
+            require_once("controllers/mnt/unidades.control.php");
+            break;
+        case "unidad":
+                require_once("controllers/mnt/unidad.control.php");
+                break;
+        //Mantenimiento de Unidades
+        case "empresas":
+            require_once("controllers/mnt/empresas.control.php");
+            break;
+        case "empresa":
+            require_once("controllers/mnt/empresa.control.php");
+            break;
         default:
             require_once("controllers/error.control.php");
 
